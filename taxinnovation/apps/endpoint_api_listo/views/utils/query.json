@@ -1,0 +1,1 @@
+"INSERT INTO api_listomx_relacion_factura_pago(invoice,payment) VALUES %s ON CONFLICT DO NOTHING"

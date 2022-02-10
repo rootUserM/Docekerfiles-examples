@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  django: &django
+    build:
+      context: .
+      dockerfile: ./compose/local/django/Dockerfile
+    image: tax_innovation_local_django
+    container_name: tax_innovation_local_django
+    depends_on:
+      - postgres
+    volumes:
+      - .:/app
+    env_file:
+      - ./.envs/.local/.django
+      - ./.envs/.local/.postgres
+    ports:
+      - "9005:8000"
+    links:
+      - postgres:postgres
+    command: /start
+
+  postgres:
+    build:
+      context: .
+      dockerfile: ./compose/local/postgres/Dockerfile
+    image: tax_innovation_local_postgres
+    container_name: tax_innovation_local_postgres
+    volumes:
+      - local_postgres_data:/var/lib/postgresql/data
+      - local_postgres_data_backups:/backups
+    env_file:
+      - ./.envs/.local/.postgres
+    ports:
+      - 5435:5432
+
+
+volumes:
+  local_postgres_data: {}
+  local_postgres_data_backups: {}

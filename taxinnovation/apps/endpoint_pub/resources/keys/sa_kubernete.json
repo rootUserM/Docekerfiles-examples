@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tax-innovation-produccion",
+  "private_key_id": "a0e3dd7258d92ce788221e9183c4aa84d496f461",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCO4d2+OQxMjhiX\nhv18ZwxoU9nynAqpnYUtK+uF8xR3O3ooqR3YxAwFVd2MGy5EpibSZ0SOv5jgJt7w\nToyD/9myNOw0MnRvEQZgfuactjkWj5co8CQL6/S+xKamSWNf4SqvsZoAoBK8fJbP\nGeGRBtDajyPTPZ2Qf7cEVzfPIwlrt2u3FtFONDy8kQ1H9SSrLCaIIrA2nbKJCxT9\nV+i7uDOtNOzUeQXgPvbu8YaeUU8PmOKk20wYXbcQOSEn4mSyeqWNtGhoxgYJrVlx\nan7DTWLNGsqusLFLvoBZhRP+mc40Qq88Cg3eHHdVRM8d7HDGmvCb7+YYrb5RkHDp\nYhFgXrX7AgMBAAECggEAAKQNbxexq34kcS48DUq4PnYQmR0dOXnqibZON1BX5SIi\nyasSa+o54OFgxiajDrn7Q2tRdJgZFw/BZTgK4fKAwCA7o5S6Q3AherDslFbKBEe8\nMlL1v9HD3LQhkN199or41mjCtJsZcsLWo0Y9M+eYz/zqfkh2cOgZu8D3x5x220mI\nRXSRK3rK5HrNIoxeoiYIaKwKi8uknPJzCjC7vLbgOKFeuELqlBLp2jG4TCeO8JTr\nM2YVeCgx1TkHSVN1ziPWd/fwqqznZZ3LrRbA/CEryxzYgZAMqFMUMo5UG98cXZiT\n7ZmeGsPrNpi0SfNb/6UHU1c6NcFqQVsKpL/RwrnqWQKBgQDDIJWscBju6in5um2p\n5hW/eDn1EGW0tg1YNzbdGENQU5a5avEAKgm+Ya2o696V6Kw3KvR4d594qrLosLYM\n7dSNQMTmD2kLpxR8InBhwPPtoaxTuPhOd3vvfoVDzYisEJ/vDC9qOOlyyN4URYOD\nSmAGVUOmBJ9jDTOxNXiTyZvAwwKBgQC7dNlSazaHMw9QerSNsACUOr4JDSzmftCv\n5BvruWpqy4StLD0XKHWybX0SRWwIiCheBtJvwIqGsyipfic2DhS5Nvn5qYEKSmJF\nQmjKiqrc9lC/zRQUHmMX54K1YMIp1d5Gjfh4e/XwH/I8tTweT7GY8BnBY+Jr3PkQ\niqtXlmZiaQKBgBLbCjuglXg43peIQWKinkVjW85nqDxfP0jgBQg2eQLBIRaH1AQd\nC9X+4GYrbNX1pvapyvf9L0bcz+8WbHExZlHECYLlyFPc8GjSdyOrHqc+8UUh4bTL\nbQmGo2Aa83MVJC9YcRiFqWFzMaqp0PyV6lOSV7gqSDCtLOqZ7S3y1H87AoGBALMv\nNZD/5MaFey0NrcsGIveN0xsp2fKV4/tNy5aezOc6lR9HeznItgCRgg1WCLd7F0MR\nuFOUM5YgaUzixq539T06HOaWLT/d7GOR4ENDG6JNXNCKQpgcl9JAvQONcuu0gFzm\n1kytCWC32MBI6Sd8PCIZ2DSwur0qI3W5Z6E4pbOJAoGBAJQ4I/QYTlfVNxxAB92y\nagNe2fm1Q9KukKY/oCs3MKeJajz3wICO1VzJF2A0/EPiL7me3ONX7X6/u0hFeOvv\nPPm54KkdoHoq1X4BRxVQCi6oblriIDxsevXtnXfM9CdZ3MyoOxpQkiAbP8dwEODI\neuTHqiBRE3oV3mpOIeKw1L67\n-----END PRIVATE KEY-----\n",
+  "client_email": "pubsub@tax-innovation-produccion.iam.gserviceaccount.com",
+  "client_id": "117396824362548335919",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pubsub%40tax-innovation-produccion.iam.gserviceaccount.com"
+}

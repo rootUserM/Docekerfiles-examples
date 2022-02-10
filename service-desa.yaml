@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: tax-innovation-backend
+  name: tax-innovation-backend-service
+  namespace: tax-innovation-qa
+spec:
+  externalTrafficPolicy: Cluster
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  selector:
+    app: tax-innovation-backend
+  sessionAffinity: None
+  type: LoadBalancer

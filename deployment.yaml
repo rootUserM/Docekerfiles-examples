@@ -1,0 +1,124 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tax-innovation-backend-prod
+  namespace: tax-innovation-prod
+  labels:
+    app: tax-innovation-backend
+spec:
+  replicas: 1
+  revisionHistoryLimit: 5
+  selector:
+    matchLabels:
+      app: tax-innovation-backend
+  template:
+    metadata:
+      labels:
+        app: tax-innovation-backend
+    spec:
+      containers:
+        - name: tax-innovation-backend
+          image: gcr.io/tax-innovation-produccion/tax_innovation_backend_prod:0.2.3.4
+          ports:
+            - containerPort: 5000
+          env:
+            - name: EMAIL_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: EMAIL_HOST
+            - name: EMAIL_USE_TLS
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: EMAIL_USE_TLS
+            - name: EMAIL_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: EMAIL_PORT
+            - name: EMAIL_HOST_USER
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: EMAIL_HOST_USER
+            - name: EMAIL_HOST_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: EMAIL_HOST_PASSWORD
+            - name: EMAIL_CONTACT
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: EMAIL_CONTACT
+            - name: DJANGO_LOG_LEVEL
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: DJANGO_LOG_LEVEL
+            - name: DJANGO_SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: DJANGO_SECRET_KEY
+            - name: DJANGO_SETTINGS_MODULE
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: DJANGO_SETTINGS_MODULE
+            - name: DJANGO_DEBUG
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: DJANGO_DEBUG
+            - name: DJANGO_ADMIN_URL
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: DJANGO_ADMIN_URL
+            - name: DJANGO_ALLOWED_HOSTS
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: DJANGO_ALLOWED_HOSTS
+            - name: POSTGRES_DB
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: POSTGRES_DB
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: POSTGRES_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: POSTGRES_PASSWORD
+            - name: POSTGRES_HOST
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: POSTGRES_HOST
+            - name: POSTGRES_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: POSTGRES_PORT
+            - name: POSTGRES_DB_TEST
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: POSTGRES_DB_TEST
+            - name: DJANGO_EMAIL_BACKEND
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: DJANGO_EMAIL_BACKEND
+            - name: GCP_FILES
+              valueFrom:
+                secretKeyRef:
+                  name: variables-taxt-innovation-back-prod
+                  key: GCP_FILES

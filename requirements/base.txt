@@ -1,0 +1,37 @@
+pytz==2020.1  # https://github.com/stub42/pytz
+python-slugify==4.0.1  # https://github.com/un33k/python-slugify
+Pillow==7.2.0  # https://github.com/python-pillow/Pillow
+rcssmin==1.0.6  # https://github.com/ndparker/rcssmin
+argon2-cffi==20.1.0  # https://github.com/hynek/argon2_cffi
+whitenoise==5.2.0  # https://github.com/evansd/whitenoise
+redis==3.5.3  # https://github.com/andymccurdy/redis-py
+hiredis==1.1.0  # https://github.com/redis/hiredis-py
+celery==4.4.6  # pyup: < 5.0,!=4.4.7  # https://github.com/celery/celery
+django-celery-beat==2.0.0  # https://github.com/celery/django-celery-beat
+flower==0.9.5  # https://github.com/mher/flower
+WeasyPrint==51
+pyparsing==2.4.7  # https://pypi.org/project/pyparsing/
+listoapi==0.1.68 # https://pypi.org/project/listoapi/
+
+# Django
+# ------------------------------------------------------------------------------
+django-grappelli==2.14.2  # https://pypi.org/project/jet-django/
+django==3.1.1  # pyup: < 3.2  # https://www.djangoproject.com/
+django-environ==0.4.5  # https://github.com/joke2k/django-environ
+django-allauth==0.42.0  # https://github.com/pennersr/django-allauth
+django-redis==4.12.1  # https://github.com/jazzband/django-redis
+django_recaptcha==2.0.6
+# Django REST Framework
+djangorestframework==3.11.1  # https://github.com/encode/django-rest-framework
+djangorestframework-camel-case==1.2.0  # https://github.com/vbabiy/djangorestframework-camel-case
+djangorestframework-simplejwt==4.6.0  # https://github.com/SimpleJWT/django-rest-framework-simplejwt
+django-cors-headers==3.5.0 # https://github.com/adamchainz/django-cors-headers
+drf-friendly-errors-2==0.14.3  # https://pypi.org/project/drf-friendly-errors-2/
+django-url-filter==0.3.15  # https://github.com/miki725/django-url-filter
+djangorestframework-recursive==0.1.2  # https://github.com/heywbj/django-rest-framework-recursive
+drf-spectacular==0.10.0  # https://github.com/tfranzel/drf-spectacular
+django-filter==2.4.0  # https://pypi.org/project/django-filter/
+django-bulk-update-or-create==0.2.0  # https://pypi.org/project/django-bulk-update-or-create/
+django-storages[google]==1.11.1  # https://github.com/jschneier/django-storages
+google==3.0.0 # https://pypi.org/project/google/
+django-jsonfield==1.4.1 # https://pypi.org/project/django-jsonfield/

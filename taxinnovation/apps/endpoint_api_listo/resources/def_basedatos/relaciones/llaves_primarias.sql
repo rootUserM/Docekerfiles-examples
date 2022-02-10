@@ -1,0 +1,12 @@
+ALTER TABLE api_listomx_cfdis_archivo ADD PRIMARY KEY(id);
+ALTER TABLE api_listomx_cfdis_articulo ADD PRIMARY KEY(id);
+ALTER TABLE api_listomx_cfdis_documento ADD PRIMARY KEY(id);
+ALTER TABLE api_listomx_cfdis_factura ADD PRIMARY KEY(id);
+ALTER TABLE api_listomx_cfdis_pago ADD PRIMARY KEY(id);
+ALTER TABLE api_listomx_cfdis_recibo ADD PRIMARY KEY(id);
+ALTER TABLE api_listomx_declaraciones_balanzacredito ADD PRIMARY KEY(id);
+ALTER TABLE api_listomx_declaraciones_declaracion ADD PRIMARY KEY(id);
+ALTER TABLE api_listomx_declaraciones_diot ADD PRIMARY KEY(id);
+ALTER TABLE api_listomx_declaraciones_impuesto ADD PRIMARY KEY(id);
+ALTER TABLE api_listomx_declaraciones_periodo ADD PRIMARY KEY(id);
+ALTER TABLE api_listomx_rfc ADD PRIMARY KEY(id);

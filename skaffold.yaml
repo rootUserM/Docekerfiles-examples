@@ -1,0 +1,17 @@
+apiVersion: skaffold/v2beta7
+kind: Config
+metadata:
+  name: tax-innovation-backend
+build:
+  artifacts:
+    - image: gcr.io/tax-innovation-produccion/tax_innovation_backend
+      context: taxinnovation/apps/endpoint_pub
+  tagPolicy:
+    sha256: {}
+deploy:
+  kubectl:
+    manifests:
+      - deployment.yaml
+      - proxy_deployment.yaml
+      - proxy_service.yaml
+      - service.yaml

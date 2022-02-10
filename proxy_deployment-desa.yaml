@@ -1,0 +1,31 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: cloudsql-desa-admin-proxy
+  namespace: tax-innovation-qa
+  labels:
+    app: cloudsql-desa-admin-proxy
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: cloudsql-desa-admin-proxy
+        unit: desaadmincloudsql
+    spec:
+     containers:
+     - name: cloudsql-desa-admin-proxy
+       image: gcr.io/cloudsql-docker/gce-proxy:1.11
+       command: ["/cloud_sql_proxy",
+            "-instances=tax-innovation-produccion:us-central1:tim-desarrollo=tcp:0.0.0.0:5432",
+            "-credential_file=/secrets/cloudsql/credentials.json"]
+       volumeMounts:
+         - name: cloudsql-instance-credentials
+           mountPath: /secrets/cloudsql
+           readOnly: true
+     volumes:
+      - name: cloudsql-instance-credentials
+        secret:
+          secretName: cloudsql-instance-credentials
+      - name: cloudsql
+        emptyDir: {}
